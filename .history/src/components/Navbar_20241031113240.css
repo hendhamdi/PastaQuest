@@ -1,0 +1,24 @@
+.reservation-button {
+    border: 2px solid #007bff;
+    /* Cadre autour du bouton de réservation */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.reservation-button-link {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #007bff;
+    /* Couleur du texte du bouton de réservation */
+    text-decoration: none;
+    /* Enlever le soulignement du lien */
+    cursor: pointer;
+}
+
+.reservation-button-link:hover {
+    background-color: #007bff;
+    color: #fff;
+    /* Couleur du texte du bouton de réservation au survol */
+}

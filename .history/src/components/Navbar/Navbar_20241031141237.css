@@ -1,0 +1,77 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: -10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+    font-family: "Playwrite GB S", cursive;
+   
+}
+
+.nav-button:hover {
+    color: #d61424;
+}
+
+.reservation-button {
+    border: 2px solid #070707;
+    border-radius: 30px;
+    padding: 3px;
+    
+}
+
+.reservation-button button {
+    background: none;
+    border: none;
+    padding: 7px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Playwrite GB S", cursive;
+}
+
+.reservation-button:hover {
+    background-color:#AD343E;
+    
+    
+       
+    
+      
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+   padding-right: 2%;
+}
+
+.logo {
+    height: 110px;
+    margin-right: 10px;
+    padding-left: 40px;
+}
+
+.restaurant-name {
+  font-family: "Pacifico", cursive;
+    font-optical-sizing: auto;
+   
+        font-size: 24px;
+    color: #333;
+}

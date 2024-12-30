@@ -1,0 +1,53 @@
+.extras-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    background-color: #f8f8f8;
+    /* Couleur de fond optionnelle */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.extras-section-content {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.extras-section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #333;
+}
+
+.extras-section-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.extras-section-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.extras-image-wrapper {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.extras-image {
+    width: 150px;
+    /* Ajustez selon vos besoins */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.large-image .extras-image {
+    width: 180px;
+    /* Plus grand pour l'image principale */
+    height: 180px;
+}

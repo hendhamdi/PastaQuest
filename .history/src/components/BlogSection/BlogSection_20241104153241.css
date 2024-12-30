@@ -1,0 +1,116 @@
+.blog-section {
+    padding: 40px;
+    background-color: #f7f7f7;
+    text-align: left;
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.blog-title {
+    font-size: 36px;
+    color: #2e2d2d;
+    font-family: "Playfair Display", serif;
+}
+
+.read-all-button {
+    background-color: #AD343E;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.read-all-button:hover {
+    background-color: #870505;
+}
+
+.blog-content {
+    display: flex;
+    /* Utilisation de flex pour aligner les parties horizontalement */
+    justify-content: space-between;
+    /* Espacement entre les cartes */
+}
+
+.main-card {
+    flex: 2;
+    /* Permet à la carte principale de prendre plus de largeur */
+    margin-right: 15px;
+    /* Espace entre la carte principale et les sous-cartes */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.blog-details {
+    margin-top: 15px;
+}
+
+.blog-date {
+    font-size: 14px;
+    color: #888;
+}
+
+.blog-post-title {
+    font-size: 20px;
+    color: #AD343E;
+    margin: 10px 0;
+}
+
+.blog-description {
+    font-size: 16px;
+    color: #555;
+}
+
+.sub-cards {
+    display: flex;
+    flex-direction: column;
+    /* Aligne les sous-cartes verticalement */
+    gap: 15px;
+    /* Espacement entre les cartes */
+    flex: 1;
+    /* Permet aux sous-cartes de prendre une largeur égale */
+}
+
+.sub-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.sub-blog-image {
+    width: 50%;
+    /* La largeur de l'image */
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.sub-blog-details {
+    flex: 1;
+    /* Permet aux détails de prendre le reste de l'espace */
+}
+
+.sub-blog-title {
+    font-size: 18px;
+    color: #AD343E;
+}
+
+.sub-blog-description {
+    font-size: 14px;
+    color: #555;
+}

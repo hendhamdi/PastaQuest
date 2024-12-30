@@ -1,0 +1,60 @@
+.home {
+    background-image: url('./images/background.jpg');
+    /* Remplacez par le chemin de votre image de fond */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* Hauteur de la section */
+    display: flex;
+    align-items: center;
+    /* Centrer verticalement le contenu */
+    justify-content: flex-start;
+    /* Aligner le contenu à gauche */
+    padding: 20px;
+    /* Espacement interne */
+    color: white;
+    /* Couleur du texte */
+}
+
+.home-content {
+    max-width: 600px;
+    /* Largeur maximale du contenu */
+}
+
+.home-title {
+    font-size: 48px;
+    /* Taille du titre */
+    margin-bottom: 20px;
+    /* Espace sous le titre */
+}
+
+.home-buttons {
+    display: flex;
+    /* Afficher les boutons en ligne */
+    gap: 20px;
+    /* Espace entre les boutons */
+}
+
+.home-button {
+    padding: 10px 20px;
+    /* Espacement interne des boutons */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Couleur de fond semi-transparente */
+    border: none;
+    /* Pas de bordure */
+    border-radius: 5px;
+    /* Coins arrondis */
+    cursor: pointer;
+    /* Curseur pointer pour indiquer que c'est cliquable */
+    font-size: 16px;
+    /* Taille de la police */
+    color: #333;
+    /* Couleur du texte des boutons */
+    transition: background-color 0.3s;
+    /* Effet de transition */
+}
+
+.home-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    /* Couleur de fond au survol */
+}

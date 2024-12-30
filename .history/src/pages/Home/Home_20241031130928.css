@@ -1,0 +1,56 @@
+/* src/pages/Home/Home.css */
+.home {
+    height: 400px;
+    /* Ajuste selon tes besoins */
+    width: 100%;
+    /* Utiliser 100% de la largeur disponible */
+    background-size: cover;
+    /* Ou 'contain' pour garder le ratio */
+    background-position: center;
+    /* Centrer l'image */
+    display: flex;
+    /* Pour centrer le contenu */
+    align-items: center;
+    /* Centrer verticalement */
+    justify-content: center;
+    /* Centrer horizontalement */
+    position: relative;
+    /* Nécessaire pour des éléments positionnés */
+}
+
+.home-content {
+    color: white;
+    /* Change la couleur du texte si nécessaire */
+    text-align: left;
+    /* Aligner le texte à gauche */
+    position: relative;
+    /* Pour le contenu superposé */
+    z-index: 1;
+    /* Mettre le contenu au-dessus de l'image de fond */
+}
+
+.home-title {
+    font-size: 3rem;
+    /* Ajuste la taille du titre selon tes besoins */
+    margin-bottom: 20px;
+    /* Espace sous le titre */
+}
+
+.home-buttons {
+    display: flex;
+    gap: 10px;
+    /* Espace entre les boutons */
+}
+
+.home-button {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Bouton avec fond blanc transparent */
+    color: black;
+    /* Couleur du texte des boutons */
+    padding: 10px 20px;
+    /* Padding autour du texte du bouton */
+    text-decoration: none;
+    /* Supprimer le soulignement */
+    border-radius: 5px;
+    /* Coins arrondis */
+}

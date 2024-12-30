@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/hendhamdi/PastaQuest/static/css/main.d089ffd5.css",
+    "main.js": "/hendhamdi/PastaQuest/static/js/main.728044e6.js",
+    "static/js/453.ea28b215.chunk.js": "/hendhamdi/PastaQuest/static/js/453.ea28b215.chunk.js",
+    "static/media/sec3.gif": "/hendhamdi/PastaQuest/static/media/sec3.326e8776ba7ca4cb2907.gif",
+    "static/media/4.png": "/hendhamdi/PastaQuest/static/media/4.f793b0b3f508482ef398.png",
+    "static/media/image.png": "/hendhamdi/PastaQuest/static/media/image.e8deee6cc49c52ceb3f1.png",
+    "static/media/extra3.png": "/hendhamdi/PastaQuest/static/media/extra3.f63ad3de3a62b10c97a1.png",
+    "static/media/extra2.png": "/hendhamdi/PastaQuest/static/media/extra2.b13857d13dcc86292f20.png",
+    "static/media/3.jpg": "/hendhamdi/PastaQuest/static/media/3.1d22c14b01b7dda22b52.jpg",
+    "static/media/1.jpg": "/hendhamdi/PastaQuest/static/media/1.ea09663349bd961ebc24.jpg",
+    "static/media/event2.jpg": "/hendhamdi/PastaQuest/static/media/event2.845acd3377206cfac440.jpg",
+    "static/media/extra1.png": "/hendhamdi/PastaQuest/static/media/extra1.d547ccc3eb986384e185.png",
+    "static/media/event3.jpg": "/hendhamdi/PastaQuest/static/media/event3.3eadd7ecb34a271aaa07.jpg",
+    "static/media/classique.jpg": "/hendhamdi/PastaQuest/static/media/classique.872fc3704fcc6c75c350.jpg",
+    "static/media/vig.jpg": "/hendhamdi/PastaQuest/static/media/vig.460e9606393918e394e8.jpg",
+    "static/media/logo.png": "/hendhamdi/PastaQuest/static/media/logo.88842b8e5e1d57f867e7.png",
+    "static/media/chefimage2.jpg": "/hendhamdi/PastaQuest/static/media/chefimage2.6ade3b47d6630353a52c.jpg",
+    "static/media/event4.jpg": "/hendhamdi/PastaQuest/static/media/event4.e49a954d663c3c3a3899.jpg",
+    "static/media/chef.jpg": "/hendhamdi/PastaQuest/static/media/chef.0bae588caae7d1279773.jpg",
+    "static/media/chefimage1.jpg": "/hendhamdi/PastaQuest/static/media/chefimage1.fec0bc3159568d5628f1.jpg",
+    "static/media/mer.jpg": "/hendhamdi/PastaQuest/static/media/mer.b5f415fbfc0388ec02f3.jpg",
+    "static/media/event1.jpg": "/hendhamdi/PastaQuest/static/media/event1.1775c7b7d5481cc75502.jpg",
+    "static/media/2.jpg": "/hendhamdi/PastaQuest/static/media/2.a5ffd4b99b863688adbf.jpg",
+    "static/media/gig.jpg": "/hendhamdi/PastaQuest/static/media/gig.a5ffd4b99b863688adbf.jpg",
+    "index.html": "/hendhamdi/PastaQuest/index.html",
+    "main.d089ffd5.css.map": "/hendhamdi/PastaQuest/static/css/main.d089ffd5.css.map",
+    "main.728044e6.js.map": "/hendhamdi/PastaQuest/static/js/main.728044e6.js.map",
+    "453.ea28b215.chunk.js.map": "/hendhamdi/PastaQuest/static/js/453.ea28b215.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d089ffd5.css",
+    "static/js/main.728044e6.js"
+  ]
+}
