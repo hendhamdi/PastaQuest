@@ -1,6 +1,6 @@
 {
   "name": "mon-restaurant",
-  "homepage": "https://pasta-quest.vercel.app",
+"homepage": "https://pasta-quest.vercel.app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
