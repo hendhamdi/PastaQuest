@@ -1,0 +1,45 @@
+/* Styles pour garantir que toutes les cartes ont une taille uniforme */
+.menu-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(60, 59, 59, 0.1);
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    /* Hauteur augmentée */
+    width: 300px;
+    /* Largeur augmentée */
+    min-height: 350px;
+    /* Assurer une hauteur minimale uniforme */
+    min-width: 300px;
+    /* Assurer une largeur minimale uniforme */
+    transition: transform 0.3s ease;
+    border: 0.5px solid #7d7d7d;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 180px;
+    /* Hauteur augmentée pour les images */
+    object-fit: cover;
+}
+
+/* Pour forcer une taille minimale dans le contenu des cartes */
+.menu-card-content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    /* Permet de remplir l'espace restant pour une taille uniforme */
+}
+
+/* Toujours s'assurer qu'aucune carte ne dépasse la taille spécifiée */
+.menu-card:hover {
+    transform: scale(1.05);
+    min-height: 350px;
+    /* Assurer que la carte garde la même taille même au survol */
+}

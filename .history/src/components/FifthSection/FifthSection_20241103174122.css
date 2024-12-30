@@ -1,0 +1,84 @@
+/* src/components/FifthSection/FifthSection.css */
+
+.fifth-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #ebeaea;
+    padding-top: 80px;
+}
+
+.fifth-section-image-container {
+    flex: 1;
+}
+
+.fifth-section-main-image {
+    width: 350px;
+    height: 520px;
+    border-radius: 10px;
+    margin-left: 170px;
+}
+
+.fifth-section-side-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.side-image1 {
+    width: 180px;
+    height: 240px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.side-image2 {
+    width: 180px;
+    height: 250px;
+    
+    border-radius: 10px;
+}
+
+.fifth-section-content {
+    flex: 2;
+    margin-right: 160px;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.fifth-section-title {
+    font-size: 45px;
+    color: #AD343E;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.fifth-section-description {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.fifth-section-points {
+    list-style: none;
+    padding: 0;
+    color: #363434;
+}
+
+.fifth-section-points li {
+    margin-bottom: 1px;
+    position: relative;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.fifth-section-points li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: -25px;
+    color: #AD343E;
+    font-weight: bold;
+    font-size: 50px;
+}

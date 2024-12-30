@@ -1,0 +1,71 @@
+.home {
+    display: flex;
+    /* Utilise flexbox pour aligner les éléments */
+    align-items: center;
+    /* Centre verticalement les éléments */
+    justify-content: space-between;
+    /* Espacer les éléments */
+    height: 400px;
+    /* Ajuste la hauteur selon tes besoins */
+    background-color: black;
+    /* Couleur de fond noire */
+    padding: 20px;
+    /* Ajoute du padding */
+    color: white;
+    /* Couleur du texte */
+}
+
+.home-content {
+    flex: 1;
+    /* Prend tout l'espace disponible */
+}
+
+.home-title {
+    font-size: 3em;
+    /* Ajuste la taille selon tes besoins */
+    margin: 0;
+    /* Pour enlever les marges par défaut */
+}
+
+.home-buttons {
+    margin-top: 20px;
+    /* Espace entre le titre et les boutons */
+}
+
+.home-button {
+    margin-right: 10px;
+    /* Espace entre les boutons */
+    padding: 10px 20px;
+    /* Ajoute du padding pour un look plus agréable */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Couleur de fond semi-transparente */
+    color: #000;
+    /* Couleur du texte */
+    text-decoration: none;
+    /* Enlève le soulignement */
+    border-radius: 5px;
+    /* Coins arrondis */
+    transition: background-color 0.3s;
+    /* Animation de transition */
+}
+
+.home-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    /* Changer couleur au survol */
+}
+
+.home-image {
+    flex: 1;
+    /* Prend tout l'espace disponible */
+    display: flex;
+    /* Utilise flexbox pour centrer l'image */
+    justify-content: flex-end;
+    /* Aligner l'image à droite */
+}
+
+.image-right {
+    max-width: 100%;
+    /* S'assure que l'image ne déborde pas */
+    height: auto;
+    /* Garde le ratio d'aspect */
+}

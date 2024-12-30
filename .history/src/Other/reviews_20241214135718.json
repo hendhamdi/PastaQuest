@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Une expérience culinaire incroyable !",
+    "description": "Les pâtes étaient tout simplement divines, parfaitement cuites et pleines de saveurs. Le cadre est chaleureux et l'accueil très agréable. Je recommande vivement !",
+    "clientImage": "https://i.pinimg.com/564x/ca/df/02/cadf02d4321737068d835446d1ba759f.jpg",
+    "clientName": "Alex Dupont",
+    "clientLocation": "Paris, France"
+  },
+  {
+    "title": "Service impeccable et plats savoureux",
+    "description": "Un moment exceptionnel. Les saveurs étaient au rendez-vous et le personnel aux petits soins. Un endroit parfait pour passer une soirée entre amis.",
+    "clientImage": "https://i.pinimg.com/564x/ca/df/02/cadf02d4321737068d835446d1ba759f.jpg",
+    "clientName": "Marie Curie",
+    "clientLocation": "Lyon, France"
+  },
+  {
+    "title": "Ambiance chaleureuse et cuisine exquise",
+    "description": "Les plats étaient de grande qualité avec des saveurs subtiles. L’ambiance conviviale m’a tout de suite charmée.",
+    "clientImage": "https://i.pinimg.com/564x/ca/df/02/cadf02d4321737068d835446d1ba759f.jpg",
+    "clientName": "Jean Martin",
+    "clientLocation": "Nice, France"
+  },
+  {
+    "title": "Un régal pour les papilles",
+    "description": "Chaque plat était une explosion de saveurs. Une cuisine italienne authentique qui rappelle la maison.",
+    "clientImage": "https://i.pinimg.com/564x/ca/df/02/cadf02d4321737068d835446d1ba759f.jpg",
+    "clientName": "Sophie Durand",
+    "clientLocation": "Marseille, France"
+  },
+  {
+    "title": "Un voyage en Italie",
+    "description": "Les saveurs italiennes traditionnelles étaient au rendez-vous. J’ai adoré l’expérience !",
+    "clientImage": "https://i.pinimg.com/564x/ca/df/02/cadf02d4321737068d835446d1ba759f.jpg",
+    "clientName": "Paul Lefevre",
+    "clientLocation": "Toulouse, France"
+  },
+  {
+    "title": "Cuisine raffinée et ambiance chic",
+    "description": "L'endroit parfait pour un dîner romantique. Les plats sont délicieux et l’ambiance cosy.",
+    "clientImage": "https://i.pinimg.com/564x/ca/df/02/cadf02d4321737068d835446d1ba759f.jpg",
+    "clientName": "Emma Faure",
+    "clientLocation": "Bordeaux, France"
+  }
+]

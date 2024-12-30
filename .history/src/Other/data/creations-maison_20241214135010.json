@@ -1,0 +1,53 @@
+[
+  {
+    "image": "https://i.pinimg.com/736x/d8/83/22/d88322cde63933e2c2033322e471511e.jpg",
+    "name": "Spaghetti au Pesto de Basilic et Noix de Cajou",
+    "price": 42,
+    "description": "Spaghetti maison servis avec un pesto frais à base de basilic, noix de cajou, ail, parmesan et huile d'olive."
+  },
+   {
+    "image": "https://i.pinimg.com/736x/7e/a5/8b/7ea58bc5ad3528c5e708bb9e909ee064.jpg",
+    "name": "Tagliatelle aux Crevettes et Citron Confits",
+    "price": 49,
+    "description": "Tagliatelles fraîches accompagnées de crevettes grillées, de citron confit, ail et sauce crémeuse au beurre"
+  }
+  ,
+   {
+   
+    "image": "https://i.pinimg.com/736x/e3/6e/c4/e36ec4b90895cdf97469504825529a7c.jpg",
+    "name": "Penne aux Champignons Sauvages et Truffe",
+    "price": 46,
+    "description": "Penne servies avec une sauce crémeuse aux champignons sauvages, relevée de truffe noire râpée."
+  },
+   {
+    "image": "https://i.pinimg.com/736x/31/2c/de/312cde98edf0c4089c90e2ab779e0655.jpg",
+    "name": "Fettuccine aux Légumes Grillés et Fromage de Chèvre",
+    "price": 41,
+    "description": "Fettuccines fraîches garnies de légumes grillés de saison et de fromage de chèvre fondant."
+  },
+   {
+    "image": "https://i.pinimg.com/736x/13/b3/da/13b3daa88d3e88e1a75ef3097d5cfede.jpg",
+    "name": "Lasagne aux Épinards, Ricotta et Sauce Béarnaise",
+    "price": 45,
+    "description": "Lasagnes maison avec une garniture d'épinards frais, ricotta et sauce béarnaise onctueuse."
+  },
+   {
+    "image": "https://i.pinimg.com/736x/3f/2d/bc/3f2dbcb9c6917e833dd40e4db5c8826b.jpg",
+    "name": "Orecchiette au Poulet Rôti et Sauce au Curry",
+    "price": 50,
+    "description": "Orecchiette servies avec du poulet rôti en morceaux et une sauce crémeuse au curry doux."
+  },
+   {
+    "image": "https://i.pinimg.com/736x/05/bf/71/05bf71bdb0a74fc710f668c788161ece.jpg",
+    "name": "Pappardelle aux Saumons Fumés et Crème d'Aneth",
+    "price": 55,
+    "description": "Pappardelle maison accompagnées de saumon fumé, d'une sauce crémeuse à l'aneth et au citron."
+  },
+   {
+    "image": "https://i.pinimg.com/736x/f4/a3/3f/f4a33f0dbb299ce1443bdbf46158e65c.jpg",
+    "name": "Linguine aux Cœurs d'Artichauts et Parmesan",
+    "price": 42,
+    "description": "Linguine servies avec des cœurs d'artichauts poêlés, parmesan râpé et huile d'olive extra vierge."
+  }
+  
+]

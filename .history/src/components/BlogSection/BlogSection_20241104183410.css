@@ -1,0 +1,109 @@
+.blog-section {
+    padding: 50px;
+    background-color: #ebeaea;
+    text-align: left;
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.blog-title {
+    font-size: 36px;
+    color: #2e2d2d;
+    font-family: "Playfair Display", serif;
+}
+
+.read-all-button {
+    background-color: #AD343E;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.read-all-button:hover {
+    background-color: #870505;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-card {
+    flex: 2;
+    margin-right: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: -10px;
+    height: 700px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+    width: 590px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.blog-details {
+    margin-top: 15px;
+}
+
+.blog-date {
+    font-size: 14px;
+    color: #888;
+}
+
+.blog-post-title {
+    font-size: 20px;
+    color: #AD343E;
+    margin: 10px 0;
+}
+
+.blog-description {
+    font-size: 16px;
+    color: #555;
+}
+
+.sub-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+
+.sub-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.sub-blog-image {
+    width: 50%;
+    /* La largeur de l'image */
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.sub-blog-details {
+    flex: 1;
+}
+
+.sub-blog-title {
+    font-size: 18px;
+    color: #AD343E;
+}
+
+.sub-blog-description {
+    font-size: 14px;
+    color: #555;
+}

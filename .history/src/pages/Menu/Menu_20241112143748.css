@@ -1,0 +1,48 @@
+.menu {
+    text-align: center;
+    padding: 30px;
+}
+
+.menu h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: "Playwrite GB S", cursive;
+}
+
+.menu p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.menu-button {
+    background-color: #f2f2f2;
+    border: 1px solid #0e0e0e;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #c9a2a2;
+}
+
+.menu-button.active {
+    background-color: #AD343E;
+    color: white;
+}
+
+.menu-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,0 +1,53 @@
+.home {
+    height: 630px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+      background-color: #000;
+}
+.home-content {
+    max-width: 600px;
+}
+
+.home-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color:aliceblue;
+    font-family: "Syncopate", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.home-button {
+    background-color: #ff6600;
+    /* Couleur de fond des boutons */
+    color: white;
+    /* Couleur du texte */
+    padding: 10px 20px;
+    /* Espace intérieur */
+    text-decoration: none;
+    /* Supprime le soulignement */
+    border-radius: 5px;
+    /* Coins arrondis */
+    transition: background-color 0.3s;
+    /* Effet de transition */
+}
+
+.home-button:hover {
+    background-color: #e65c00;
+    /* Couleur au survol */
+}
+.image-right{
+    width: 930px;
+    height: 600px;
+}

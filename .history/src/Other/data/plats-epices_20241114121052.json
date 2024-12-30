@@ -1,0 +1,48 @@
+[
+  {
+    "image": "https://i.pinimg.com/736x/4b/89/06/4b89064d77a6f4c341d911444f9bf508.jpg",
+    "name": "Penne Arrabbiata",
+    "price": 35,
+    "description": "Penne dans une sauce tomate épicée relevée d'ail, de piments rouges et d'herbes fraîches."
+  },
+ {
+    "image": "https://i.pinimg.com/736x/f2/9e/06/f29e06a703a02828f0296844eaa89699.jpg",
+    "name": "Spaghetti Piquants aux Fruits de Mer",
+    "price": 48,
+    "description": "Spaghetti avec un mélange épicé de crevettes, calamars et moules, relevé d'une sauce pimentée à l'ail."
+  },
+{
+    "image": "https://i.pinimg.com/736x/4c/8b/9d/4c8b9d6c776b9d50543c01addd459604.jpg",
+    "name": "Fusilli au Poulet Cajun",
+    "price": 40,
+    "description": "Fusilli accompagnés de morceaux de poulet marinés dans des épices cajun, avec des légumes sautés."
+  },
+  {
+    "image": "https://i.pinimg.com/736x/e8/c5/ac/e8c5ac276deaca6a1443cd20b4e9abc5.jpg",
+    "name": "Tagliatelle Diablo",
+    "price": 36,
+    "description": "agliatelle servies avec une sauce tomate épicée, des olives noires et des flocons de piment."
+  },{
+    "image": "https://i.pinimg.com/736x/d9/28/db/d928dbc44d6722625e03e4effbf1baa4.jpg",
+    "name": "Raviolis Piquants aux Épices Marocaines",
+    "price": 44,
+    "description": "Raviolis farcis d'une préparation végétarienne aux épices marocaines, servis avec une sauce harissa légère."
+  },
+  {
+    "image": "https://i.pinimg.com/736x/37/3f/99/373f998467ffd17bde3ee869d09aa186.jpg",
+    "name": "Linguine au Chorizo et Paprika",
+    "price": 40,
+    "description": "Linguine agrémentées de tranches de chorizo épicé, de paprika fumé et d'une touche d'ail."
+  },{
+    "image": "https://i.pinimg.com/736x/ec/54/9f/ec549f47d3c358d448c24fc0dc947b6e.jpg",
+    "name": "Conchiglie Sauce Chipotle et Avocat",
+    "price": 38,
+    "description": "Pâtes coquillages en sauce crémeuse à base de chipotle, ail et avocat, pour une touche épicée et onctueuse."
+  },
+  {
+    "image": "https://www.pinterest.com/pin/1035687245555259021/",
+    "name": "Penne Arrabbiata",
+    "price": 15,
+    "description": "Penne épicées à la sauce tomate et piment."
+  }
+]

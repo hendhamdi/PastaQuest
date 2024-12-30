@@ -1,0 +1,52 @@
+[
+  {
+    "image": "https://i.pinimg.com/736x/a0/0e/9c/a00e9c41526819037f67366fd89af455.jpg",
+    "name": "Spaghetti alla Carbonara",
+    "price": 39,
+    "description": "Spaghetti servis avec une sauce crémeuse à base de guanciale, œufs, pecorino et poivre noir."
+  },
+
+   {
+    "image": "https://i.pinimg.com/736x/19/fe/1b/19fe1bf673086e18f82a0aa079347bbc.jpg",
+    "name": "Tagliatelle al Ragù (Bolognese)",
+    "price": 45,
+    "description": "Tagliatelles fraîches nappées d'un ragù maison à base de viande hachée, tomates et épices."
+  },
+  {
+    "image": "https://i.pinimg.com/736x/5d/56/df/5d56dfa889957c45f0a7ce337754cbbb.jpg",
+    "name": "Penne all'Arrabbiata",
+    "price": 35,
+    "description": "Penne avec une sauce tomate épicée à l'ail et au piment, relevée d'une touche d'huile d'olive."
+  },
+  {
+    "image": "https://i.pinimg.com/736x/19/a2/5b/19a25b8d3a87341af42b7e02187d9551.jpg",
+    "name": "Fettuccine Alfredo",
+    "price": 40,
+    "description": "Fettuccines dans une riche sauce crémeuse au beurre, à la crème et au parmesan."
+  },
+  {
+    "image": "https://i.pinimg.com/736x/5a/1f/7d/5a1f7d73790ce61562f9e9820c3c90ee.jpg",
+    "name": "Lasagne alla Bolognese",
+    "price": 47,
+    "description": "Lasagnes cuites au four avec un ragù de viande, béchamel et mozzarella fondue."
+  },
+  {
+    "image": "https://i.pinimg.com/736x/b0/fd/93/b0fd9345a0d8ab7a451b27e1c90ef878.jpg",
+    "name": "Orecchiette con Cime di Rapa",
+    "price": 43,
+    "description": "Orecchiette accompagnées de brocolis-raves, d'ail, de piment et d'huile d'olive."
+  },
+  {
+    "image": "https://i.pinimg.com/736x/bd/61/07/bd6107ab5fdb0082befdcef5332fce16.jpg",
+    "name": "Pappardelle al Cinghiale",
+    "price": 52,
+    "description": "Pappardelle fraîches servies avec un ragù de sanglier mijoté avec des herbes et des légumes."
+  },
+  {
+    "image": "https://i.pinimg.com/736x/b2/58/37/b25837dd4d9b9068b531654d0e79c374.jpg",
+    "name": "Linguine alle Vongole",
+    "price": 56,
+    "description": "Linguine accompagnées de palourdes fraîches, d'ail, de vin blanc, de persil et d'une touche de piment."
+  }
+  
+]

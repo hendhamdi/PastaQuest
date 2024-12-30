@@ -1,0 +1,68 @@
+/* src/components/Footer.css */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 130px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+    max-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f5f1f1;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    color: #ddd;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-social-icons a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-color: #AD343E;
+    border-radius:25px;
+    padding: 8px 8px;
+
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links li a:hover {
+    color: #640f0f;
+}
+
+.footer-instagram-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.footer-instagram-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

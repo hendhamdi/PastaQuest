@@ -1,0 +1,93 @@
+/* Conteneur principal */
+.event-page-container {
+    padding: 40px;
+    text-align: center;
+    background-color: #eceaea;
+}
+
+/* Titre principal */
+.event-page-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Image principale */
+.event-page-image img {
+    width: 780px;
+    height: 350px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Description de l'événement */
+.event-page-description p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-right: 240px;
+}
+
+/* Liste des événements */
+.event-list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+}
+
+.event-item-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.event-item p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Bouton de réservation */
+.reservation-section {
+    margin-top: 30px;
+}
+
+.reservation-button-event {
+border: 2px solid #070707;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.reservation-button:hover {
+    background-color: #e74c3c;
+    
+}
+
+/* Images horizontales */
+.event-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.event-image {
+    width: 340px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
