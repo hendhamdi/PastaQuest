@@ -4,7 +4,7 @@
 
 PastaQuest is a web project aimed at creating a modern, user-friendly website for a pasta-specialized restaurant. The website will showcase the restaurant’s menu, provide an overview of upcoming events, and feature a simple table reservation system. 
 ### Project Link:
-[PastaQuest - Restaurant Website Project]([(https://pasta-quest-restaurant-website.vercel.app/)])
+[PastaQuest - Restaurant Website Project](https://pasta-quest-restaurant-website.vercel.app/)
 
 ## Objective
 
