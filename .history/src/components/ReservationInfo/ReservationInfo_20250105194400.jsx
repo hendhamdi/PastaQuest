@@ -1,5 +1,5 @@
 import React from 'react';
-import './ReservationInfo.css'; // Assurez-vous de créer un fichier CSS pour styliser ce composant.
+import './ReservationInfo.css'; 
 
 const ReservationInfo = () => {
   return (
@@ -17,7 +17,7 @@ const ReservationInfo = () => {
       </div>
       <div className="info-section">
         <h2>Notre Localisation :</h2>
-        <p>123 Lac 2,<br/> Tunis</p>
+        <p>123 Rue de la Gastronomie<br/> Tunis</p>
       </div>
     </div>
   );
