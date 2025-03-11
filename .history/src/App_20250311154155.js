@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import Menu from './pages/Menu/Menu';
 import Events from './pages/Events/Events';
 import Reservation from './pages/Reservation/Reservation';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -12,10 +13,11 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/menu" elcdement={<Menu />} />
         <Route path="/events" element={<Events />} />
         <Route path="/reservation" element={<Reservation />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 };
