@@ -60,7 +60,7 @@ const Footer = () => {
       </div>
       <hr className="footer-divider" />      
       <div className="footer-copyright">
-        &copy; 2024 Mon Restaurant. Tous droits réservés.
+        &copy; 2025 Mon Restaurant. Tous droits réservés.
       </div>
     </footer>
   );
