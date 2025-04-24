@@ -67,4 +67,7 @@ This back-office system will be essential for streamlining restaurant management
 This project aims to provide a seamless user experience for customers of PastaQuest while simplifying restaurant management. The initial phase of the project includes a user-facing website with menu, event, and reservation features. The future phases will include an admin dashboard for content management and reservation handling.
 
 
+
+
+
 🍝 Crafted with spaghetti, sauce, and React components.

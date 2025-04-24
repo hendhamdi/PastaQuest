@@ -42,8 +42,8 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Informations</h3>
           <p>Horaires d'ouverture:</p>
-          <p>Du lundi au vendredi : 11h00 - 22h00</p>
-          <p>Le samedi et dimanche : 12h00 - 01h00</p>
+          <p>Du lundi au vendredi : 11:00h - 00:00h</p>
+          <p>Le samedi et dimanche : 10:00h - 01:00h</p>
           <p>Adresse: 123 Rue de la Gastronomie, Tunis</p>
           <p>Téléphone: +216 1 23 45 67 89</p>
           <p>Email: PastaQuestRestaurant@gmail.com</p>

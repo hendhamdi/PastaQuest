@@ -11,7 +11,7 @@ const ThirdSection = () => {
         <img src={minivid} alt="Animation" className="third-section-image" />
         <div className="contact-card">
           <h4>Venez nous voir</h4>
-          <p>Téléphone : +33 1 23 45 67 89</p>
+          <p>Téléphone : +216 1 23 45 67 89</p>
           <p>Email : contact@restaurant.com</p>
           <p>Adresse : 123 Rue de la Gastronomie, Paris</p>
         </div>
