@@ -62,13 +62,13 @@ app.post('/reservations', async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'hamdihend857@gmail.com',
-        pass: 'kaar nciz mvzf mvrx'
+        user: process.env.EMAIL_USER, // → yourEmail@example.com
+        pass: process.env.EMAIL_PASS  // → yourPassword
       }
     });
 
     const mailOptions = {
-      from: 'hamdihend857@gmail.com',
+      from: process.env.EMAIL_USER,
       to: email, 
       subject: 'Confirmation de votre réservation',
       text: `Bonjour ${prenom},\n\n` +
