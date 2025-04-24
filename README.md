@@ -2,7 +2,7 @@
 
 ![PastaQuest Banner](https://github.com/hendhamdi/PastaQuest/blob/main/src/Images/Home/homepage.png)
 
-## 🌐Project Overview
+## 🧾Project Overview
 
 PastaQuest is a web project aimed at creating a modern, user-friendly website for a pasta-specialized restaurant. The website will showcase the restaurant’s menu, provide an overview of upcoming events, and feature a simple table reservation system. 
 
@@ -67,3 +67,4 @@ This back-office system will be essential for streamlining restaurant management
 This project aims to provide a seamless user experience for customers of PastaQuest while simplifying restaurant management. The initial phase of the project includes a user-facing website with menu, event, and reservation features. The future phases will include an admin dashboard for content management and reservation handling.
 
 
+🍝 Crafted with spaghetti, sauce, and React components.
