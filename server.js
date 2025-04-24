@@ -58,7 +58,7 @@ app.post('/reservations', async (req, res) => {
 
     await reservation.save();
 
-    // Envoi de l'email de confirmation
+    // email de confirmation
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
