@@ -11,6 +11,11 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+
+// **** AJOUT POUR LE ROLLING UPDATE ****
+console.log("Rolling update test v2");
+
+
 // Connection à MongoDB
 mongoose.connect('mongodb://mongodb:27017/restauration', {
   useNewUrlParser: true,
