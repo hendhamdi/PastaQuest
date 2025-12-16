@@ -6,6 +6,9 @@ on:
       - main
 
 jobs:
+  # =====================
+  # 1️⃣ BUILD & PUSH BACKEND ET FRONTEND
+  # =====================
   build-and-push:
     runs-on: ubuntu-latest
 
@@ -33,4 +36,23 @@ jobs:
       - name: Push frontend image
         run: docker push hamdihend/pastaquest-frontend
 
-        
+  # =====================
+  # 2️⃣ DEPLOY TO AZURE
+  # =====================
+  deploy-to-azure:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: pastaquest-app
+          images: |
+            hamdihend/pastaquest-backend
+            hamdihend/pastaquest-frontend
