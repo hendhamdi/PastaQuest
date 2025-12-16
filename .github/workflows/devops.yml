@@ -6,7 +6,43 @@ on:
       - main
 
 jobs:
+  # =====================
+  # 1️⃣ TEST
+  # =====================
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # BACKEND TESTS
+      - name: Install backend dependencies
+        run: |
+          cd backend
+          npm install
+
+      - name: Run backend tests
+        run: |
+          cd backend
+          npm test
+
+      # FRONTEND TESTS
+      - name: Install frontend dependencies
+        run: |
+          cd frontend
+          npm install
+
+      - name: Run frontend tests
+        run: |
+          cd frontend
+          npm test -- --watch=false
+
+  # =====================
+  # 2️⃣ BUILD & PUSH
+  # =====================
   build-and-push:
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
@@ -19,18 +55,37 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      # BACKEND IMAGE
+      # BACKEND
       - name: Build backend image
-        run: docker build -f backend/Dockerfile -t hamdihend/pastaquest-backend .
+        run: docker build -t hamdihend/pastaquest-backend ./backend
 
       - name: Push backend image
         run: docker push hamdihend/pastaquest-backend
 
-      # FRONTEND IMAGE
+      # FRONTEND
       - name: Build frontend image
-        run: docker build -f frontend/Dockerfile -t hamdihend/pastaquest-frontend .
+        run: docker build -t hamdihend/pastaquest-frontend ./frontend
 
       - name: Push frontend image
         run: docker push hamdihend/pastaquest-frontend
 
-        
+  # =====================
+  # 3️⃣ DEPLOY TO AZURE
+  # =====================
+  deploy:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: pastaquest-app
+          images: |
+            hamdihend/pastaquest-backend
+            hamdihend/pastaquest-frontend
