@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  backend:
+    image: hamdihend/pastaquest-backend
+    container_name: backend
+    ports:
+      - "80:80"
+
+  frontend:
+    image: hamdihend/pastaquest-frontend
+    container_name: frontend
+    ports:
+      - "3000:3000"
