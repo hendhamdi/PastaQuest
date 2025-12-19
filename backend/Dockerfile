@@ -2,15 +2,15 @@ FROM node:18
 
 WORKDIR /app
 
-# Copier package.json depuis la racine
+# Copier package.json 
 COPY package*.json ./
 
 RUN npm install
 
-# Copier server.js depuis la racine
+# Copier server.js 
 COPY server.js .
 
-# Copier models si utilisé
+# Copier models
 COPY models ./models
 
 EXPOSE 5000
