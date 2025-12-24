@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-left">
         <img src={logo} alt="Logo" className="logo" />
-        <h1 className="restaurant-name">PastaQuesttttttttttttttt</h1>
+        <h1 className="restaurant-name">PastaQuest</h1>
       </div>
       <div className="navbar-right">
         <button className="nav-button" onClick={() => navigate('/')}>Accueil</button>
