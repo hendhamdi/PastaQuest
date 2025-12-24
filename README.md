@@ -12,7 +12,7 @@ The application allows users to explore the restaurant menu, view upcoming event
 
 
 ### 🔗Project Link:
-[PastaQuest - Restaurant Website Project](https://pasta-quest-restaurant-website.vercel.app/)
+[PastaQuest - Restaurant Website Project](https://pastaquest-frontend-fnhshedkh3fca5cd.italynorth-01.azurewebsites.net/)
 
 ---
 
