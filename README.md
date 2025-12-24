@@ -72,8 +72,6 @@ The application allows users to explore the restaurant menu, view upcoming event
   - Deployment to Kubernetes cluster
 - Secure deployment via **GitHub Secrets** (KUBE_CONFIG, AZURE_CREDENTIALS)
 
----
-
 
 ### 📊 Phase 4 — Monitoring & Observability
 - **Prometheus**:
