@@ -131,4 +131,4 @@ This project is distributed under the **MIT License** — you are free to reuse 
 
 
 
-🍝 Crafted with spaghetti, sauce, and React components.
+### 🍝 Crafted with spaghetti, sauce, and React components.
