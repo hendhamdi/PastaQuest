@@ -37,6 +37,8 @@ const ReservationForm = () => {
   }),
 });
 
+
+
 if (!response.ok) {
   const errorData = await response.json();
   alert('Erreur : ' + errorData.message);
