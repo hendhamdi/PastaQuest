@@ -5,69 +5,89 @@ on:
     branches:
       - main
 
+# =====================
+# 1️⃣ BUILD & PUSH BACKEND
+# =====================
 jobs:
-  # =====================
-  # 1️⃣ BUILD & PUSH BACKEND ET FRONTEND
-  # =====================
-  build-and-push:
+  build-backend:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Docker login
+      - name: Docker Login
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      # BACKEND IMAGE
-      - name: Build backend image
-        run: docker build -f backend/Dockerfile -t hamdihend/pastaquest-backend .
+      - name: Build Backend Image
+        run: |
+          docker build -f backend/Dockerfile -t hamdihend/pastaquest-backend:latest .
 
-      - name: Push backend image
-        run: docker push hamdihend/pastaquest-backend
+      - name: Push Backend Image
+        run: |
+          docker push hamdihend/pastaquest-backend:latest
 
-      # FRONTEND IMAGE
-      - name: Build frontend image
-        run: docker build -f frontend/Dockerfile -t hamdihend/pastaquest-frontend .
-
-      - name: Push frontend image
-        run: docker push hamdihend/pastaquest-frontend
-
-  # =====================
-  # 2️⃣ DEPLOY BACKEND TO AZURE
-  # =====================
-  deploy-backend:
-    needs: build-and-push
+# =====================
+# 2️⃣ BUILD & PUSH FRONTEND
+# =====================
+  build-frontend:
     runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Docker Login
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build Frontend Image
+        run: |
+          docker build -f frontend/Dockerfile -t hamdihend/pastaquest-frontend:latest .
+
+      - name: Push Frontend Image
+        run: |
+          docker push hamdihend/pastaquest-frontend:latest
+
+# =====================
+# 3️⃣ DEPLOY BACKEND
+# =====================
+  deploy-backend:
+    needs: [build-backend, build-frontend]
+    runs-on: ubuntu-latest
+
     steps:
       - name: Azure Login
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Deploy backend to Azure Web App
+      - name: Deploy Backend to Azure
         uses: azure/webapps-deploy@v2
         with:
           app-name: pastaquest-backend
-          images: hamdihend/pastaquest-backend
+          images: hamdihend/pastaquest-backend:latest
 
-  # =====================
-  # 3️⃣ DEPLOY FRONTEND TO AZURE
-  # =====================
+# =====================
+# 4️⃣ DEPLOY FRONTEND
+# =====================
   deploy-frontend:
-    needs: build-and-push
+    needs: [build-backend, build-frontend]
     runs-on: ubuntu-latest
+
     steps:
       - name: Azure Login
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Deploy frontend to Azure Web App
+      - name: Deploy Frontend to Azure
         uses: azure/webapps-deploy@v2
         with:
           app-name: pastaquest-frontend
-          images: hamdihend/pastaquest-frontend
+          images: hamdihend/pastaquest-frontend:latest

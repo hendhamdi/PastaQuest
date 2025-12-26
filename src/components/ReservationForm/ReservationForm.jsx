@@ -22,11 +22,9 @@ const ReservationForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-     const response = await fetch('http://localhost:5000/reservations', {
+   const response = await fetch('https://pastaquest-backend-azggdrgca0a6gnay.italynorth-01.azurewebsites.net/reservations', {
   method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
+  headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
     nom: formData.nom,
     prenom: formData.prenom,

@@ -2,36 +2,38 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const Reservation = require('./models/Reservation');  
+const Reservation = require('./models/Reservation');
 const nodemailer = require('nodemailer');
 
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"]
+}));
 app.use(bodyParser.json());
 
-
-// **** AJOUT POUR LE ROLLING UPDATE ****
-console.log("Rolling update test v2");
-
-
-// Connection à MongoDB
-mongoose.connect('mongodb://mongodb:27017/restauration', {
+// Connection to MongoDB (Azure / Atlas)
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
-})
-.then(() => console.log('Connexion réussie à MongoDB'))
-.catch(err => console.error('Erreur de connexion', err));
+});
 
+// Logs détaillés de connexion MongoDB
+mongoose.connection.on('connected', () => console.log('✅ MongoDB connecté'));
+mongoose.connection.on('error', (err) => console.error('❌ MongoDB erreur', err));
 
-// Route pour recuperer toutes les reservations
+// Test rolling update
+console.log("Rolling update test v2");
+
+// Route GET pour toutes les réservations
 app.get('/reservations', async (req, res) => {
   try {
-    const reservations = await Reservation.find(); 
-    res.status(200).json(reservations); 
+    const reservations = await Reservation.find();
+    res.status(200).json(reservations);
   } catch (error) {
-
     res.status(500).json({
       message: 'Erreur interne du serveur',
       error: error.message
@@ -39,10 +41,11 @@ app.get('/reservations', async (req, res) => {
   }
 });
 
-// Route pour créer une réservation
+// Route POST pour créer une réservation
 app.post('/reservations', async (req, res) => {
   const { nom, prenom, telephone, email, dateReservation, heureReservation, nombrePersonnes, commentaires } = req.body;
 
+  // Validation des champs obligatoires
   if (!nom || !prenom || !telephone || !email || !dateReservation || !heureReservation || !nombrePersonnes) {
     return res.status(400).json({
       message: 'Tous les champs obligatoires doivent être remplis.'
@@ -63,44 +66,39 @@ app.post('/reservations', async (req, res) => {
 
     await reservation.save();
 
-    // email de confirmation
+    // Envoi de l'email de confirmation
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.EMAIL_USER, // → yourEmail@example.com
-        pass: process.env.EMAIL_PASS  // → yourPassword
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS  // App Password
       }
     });
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: email, 
-      subject: 'Confirmation de votre réservation',
+      to: email,
+      subject: 'Confirmation de votre réservation PastaQuest',
       text: `Bonjour ${prenom},\n\n` +
-            `Nous avons le plaisir de confirmer votre réservation au restaurant PastaQuest.\n\n` +
-            `Détails de votre réservation :\n` +
+            `Votre réservation chez PastaQuest a été confirmée.\n\n` +
+            `Détails :\n` +
             `- Nom : ${nom}\n` +
-            `- Prénom : ${prenom}\n` +
-            `- Date de réservation : ${dateReservation}\n` +
-            `- Heure de réservation : ${heureReservation}\n` +
+            `- Date : ${dateReservation}\n` +
+            `- Heure : ${heureReservation}\n` +
             `- Nombre de personnes : ${nombrePersonnes}\n\n` +
-            `Nous vous remercions pour votre confiance et avons hâte de vous accueillir. ` +
-            `Si vous avez des questions ou des demandes spéciales, n’hésitez pas à nous contacter.\n\n` +
-            `À très bientôt !\n\n` +
-            `Cordialement,\nL’équipe PastaQuest`
+            `Merci et à bientôt !`
     };
-
 
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
-        console.log('Erreur d\'envoi de l\'email:', error);
+        console.log('Erreur envoi email :', error);
       } else {
-        console.log('Email envoyé:', info.response);
+        console.log('Email envoyé :', info.response);
       }
     });
 
     res.status(201).json({
-      message: 'Réservation réussie et email de confirmation envoyé.',
+      message: 'Réservation créée et email de confirmation envoyé.',
       reservation
     });
   } catch (error) {
@@ -111,21 +109,8 @@ app.post('/reservations', async (req, res) => {
   }
 });
 
-// Route pour récupérer les reservations
-app.get('/reservations', async (req, res) => {
-  try {
-    const reservations = await Reservation.find(); 
-    res.status(200).json(reservations); 
-  } catch (error) {
-    res.status(500).json({
-      message: 'Erreur interne du serveur',
-      error: error.message
-    });
-  }
-});
-
-// Démarrer le serveur
+// Démarrage du serveur
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Serveur en écoute sur le port ${PORT}`);
+  console.log(`🚀 Serveur lancé sur le port ${PORT}`);
 });
